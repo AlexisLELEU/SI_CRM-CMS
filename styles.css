@@ -1,0 +1,15 @@
+.result-search-container {
+  position: relative;
+  width: 250px;
+  background-color: beige;
+}
+.result-search-createUser {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+.result-search-createUser form {
+  display: flex;
+  width: 200px;
+  flex-flow: column wrap;
+}
