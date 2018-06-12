@@ -26,11 +26,12 @@ if (isset($_POST['form_connectAdmin'])){
             
             $userInfo = $co_user->fetch();
             $_SESSION['email'] = $userInfo['email'];
+            $_SESSION['id'] = $userInfo['id_user'];
 
-            header('location: connect_file/admin_space.php?id='.$_SESSION['id']);
+            header('location: connect_file/user_space.php?id='.$_SESSION['id']);
 
         } else {
-            $erreur = "Votre email ou votre mot de passe est incorrect !!";
+            header('location: index.php');
         }
 
     } else {
