@@ -29,7 +29,7 @@ if (isset($_SESSION['id'])) {
             </div>
         </div>     
      </main>
-     <script src='../app.js'></script>
+     <script src='../js/app.js'></script>
 </body> 
 </html>
 
