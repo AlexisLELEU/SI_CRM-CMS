@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `Client`
+-- Structure de la table `client`
 --
 
-CREATE TABLE `Client` (
+CREATE TABLE `client` (
   `id_client` int(11) NOT NULL,
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
@@ -32,19 +32,19 @@ CREATE TABLE `Client` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `Client`
+-- Déchargement des données de la table `client`
 --
 
-INSERT INTO `Client` (`id_client`, `firstname`, `lastname`, `email`, `phone`, `address`, `age`, `password`) VALUES
+INSERT INTO `client` (`id_client`, `firstname`, `lastname`, `email`, `phone`, `address`, `age`, `password`) VALUES
 (1, 'prenom', 'nom', 'nomprenom@gmail.com', 123456789, '00 rue blabla 77000 meaux', 23, '123456789');
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `User`
+-- Structure de la table `user`
 --
 
-CREATE TABLE `User` (
+CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
   `firstname` varchar(50) NOT NULL,
   `lastname` varchar(50) NOT NULL,
@@ -53,10 +53,10 @@ CREATE TABLE `User` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `User`
+-- Déchargement des données de la table `user`
 --
 
-INSERT INTO `User` (`id_user`, `firstname`, `lastname`, `email`, `password`) VALUES
+INSERT INTO `user` (`id_user`, `firstname`, `lastname`, `email`, `password`) VALUES
 (1, 'alexis', 'leleu', 'test@test.fr', 'azerty');
 
 --
@@ -64,15 +64,15 @@ INSERT INTO `User` (`id_user`, `firstname`, `lastname`, `email`, `password`) VAL
 --
 
 --
--- Index pour la table `Client`
+-- Index pour la table `client`
 --
-ALTER TABLE `Client`
+ALTER TABLE `client`
   ADD PRIMARY KEY (`id_client`);
 
 --
--- Index pour la table `User`
+-- Index pour la table `user`
 --
-ALTER TABLE `User`
+ALTER TABLE `user`
   ADD PRIMARY KEY (`id_user`);
 
 --
@@ -80,13 +80,13 @@ ALTER TABLE `User`
 --
 
 --
--- AUTO_INCREMENT pour la table `Client`
+-- AUTO_INCREMENT pour la table `client`
 --
-ALTER TABLE `Client`
+ALTER TABLE `client`
   MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT pour la table `User`
+-- AUTO_INCREMENT pour la table `user`
 --
-ALTER TABLE `User`
+ALTER TABLE `user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;

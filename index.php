@@ -13,7 +13,7 @@ if (isset($_POST['form_connectAdmin'])){
 
     if (!empty($email) AND !empty($passW_connect)){
         
-        $req_user = "SELECT `id_user`,`firstname`,`lastname`,`email`, `password` FROM User WHERE `email`= :email AND `password`=:passW_connect";
+        $req_user = "SELECT `id_user`,`firstname`,`lastname`,`email`, `password` FROM user WHERE `email`= :email AND `password`=:passW_connect";
         $co_user = $pdo->prepare($req_user);
         $co_user->bindValue(':email', $email, PDO::PARAM_STR);
         $co_user->bindValue(':passW_connect', $passW_connect, PDO::PARAM_STR);
