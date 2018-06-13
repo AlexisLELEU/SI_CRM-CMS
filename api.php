@@ -30,13 +30,13 @@ for ($i=0; $i<count($columns);$i++) {
 // create SQL based on HTTP method
 switch ($method) {
   case 'GET':
-    $sql = "select * from `$table`".($key?" WHERE id=$key":''); break;
+    $sql = "select * from `$table`".($key?" WHERE id_client=$key":''); break;
   case 'PUT':
-    $sql = "update `$table` set $set where id=$key"; break;
+    $sql = "update `$table` set $set where id_client=$key"; break;
   case 'POST':
     $sql = "insert into `$table` set $set"; break;
   case 'DELETE':
-    $sql = "delete from `$table` where id=$key"; break;
+    $sql = "delete from `$table` where id_client=$key"; break;
 }
  
 // excecute SQL statement
