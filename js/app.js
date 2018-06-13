@@ -32,9 +32,7 @@ class searchAutoComplete {
   renderResultApi(resultApi, DELETE, END_POINT, CLIENT) {
     resultApi.map(item => {
       if (item) {
-        this.dom.resultSearch.innerHTML += `<div name='${item.id_client}'> ${
-          item.lastname
-        } ${item.firstname} 
+        this.dom.resultSearch.innerHTML += `<div name='${item.id_client}'><a href="../client_details.php?id=${item.id_client}">${item.lastname} ${item.firstname}</a>
           <button class="delete">X</button> 
           <a href="edit.php?id=${item.id_client}">Update</a>
           </div>`;
