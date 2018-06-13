@@ -57,8 +57,7 @@ if (isset($_POST['form_connectAdmin'])){
 <body>
     <main>
         <div class="logOn-container">
-            <div class="logOn-container__title">
-            </div>
+            <h3 class='logOn-container__title'>Knowledge</h3>
             <div class="logOn-container__form">
                 <h3 class='logOn-form__title'>Connection</h3>
                 <form class='logOn-form' method="post" action="">
